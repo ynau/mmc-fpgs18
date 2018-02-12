@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prácticas</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+	<style>
+		h5{
+			font-weight: bold;
+		}
+	</style>
+	<div class='container'>
+		<div class='col-lg-4 col-sm-6 col-xs-12'>
+		<h5>John Doe</h5>
+		<table class='table'>
+			<tr>
+				<td><span>Name</span></td>
+				<td><span id='name'></span></td>
+			</tr>
+			<tr>
+				<td><span>Age</span></td>
+				<td><span id='age'></span></td>
+			</tr>
+			<tr>
+				<td><span>City</span></td>
+				<td><span id='city'></span></td>
+			</tr>
+			<tr>
+				<td><span>Phone</span></td>
+				<td><span id='phone'></span></td>
+			</tr>
+		</table>
+		<hr>
+		<h5>Car</h5>
+		<table class='table'>
+			<tr>
+				<td><span>Brand</span></td>
+				<td><span id='brand'></span></td>
+			</tr>
+			<tr>
+				<td><span>Model</span></td>
+				<td><span id='model'></span></td>
+			</tr>
+			<tr>
+				<td><span>Price</span></td>
+				<td><span id='price'></span></td>
+			</tr>
+		</table>
+		<hr>
+		<h5>MTG</h5>
+		<div id='mtg-list'></div>
+		</div>
+		<div class='col-lg-8 col-sm-6 col-xs-12'>
+			<div class='row'>
+				<div class='col-lg-6 col-md-6 col-xs-12'>
+					<h5>Components List</h5>
+					<div id='listcomp'></div>
+				</div>
+				<div class='col-lg-6 col-md-6 col-xs-12'>
+					<h5>Components Checks</h5>
+					<div id='checkboxes'></div>
+					<hr>
+					<div class='col-xs-6'>
+						<button type='button' id='sumar' onclick='getTotal()'>Sumar</button>
+						<span id='sumar-val'></span>
+					</div>
+					<div class='col-xs-6'>
+						<span>Live</span>
+						<span id='sumarlive-val'></span>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class='row'>
+				<div class='col-lg-6'>
+					<h5>Eventos Asistidos</h5>
+					<div id='events-a'></div>
+				</div>
+				<div class='col-lg-6'>
+					<h5>Eventos No Asistidos</h5>
+					<div id='events-na'></div>
+					
+				</div>
+			</div>
+			<hr>
+			<div class='row'>
+				<div class='col-xs-12'>
+					<h5>Hacked Key</h5>
+					<span>5cac1b80-ef55-e711-8118-129dbe5738b9</span>
+					<br>
+					<button type='button' onclick='getHackedKey("5cac1b80-ef55-e711-8118-129dbe5738b9")'>
+						GET VALUE
+					</button>
+					<div id='key-val'></div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<script src="solution.js"></script>
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
