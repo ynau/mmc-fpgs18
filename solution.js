@@ -15,6 +15,10 @@ $.getJSON( "test.json", function( data ) {
 		var t = getTotalValue();
 		$("#sumarlive-val").text(t.toFixed(2));
 	});
+	//On click hacked button get hacked key
+	$("#hackedkey-btn").on("click",function(){
+		getHackedKey("5cac1b80-ef55-e711-8118-129dbe5738b9",data);
+	});
 });
 
 /*
@@ -115,8 +119,6 @@ function getEvents(data){
 		var aux_event =events[i];
 		for(e in event){
 			date = new Date(event[e].date+" 00:00:00");
-			console.log(current_date);
-			console.log(date);
 			if(current_date.getTime() > date.getTime()){
 				v.push(aux_event);
 			}else{
@@ -165,14 +167,12 @@ function getEventsNV(events){
 * @params array events
 * @return null
 */
-function getHackedKey(key){
+function getHackedKey(key,data){
 	key = key.toUpperCase();
 	var keys = data.hacked_keys[key];
 	$("#key-val").text(keys)
 	return null;
 }
-
-
 
 /*
 * Get total value of all the components checked
